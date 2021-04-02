@@ -9,11 +9,11 @@ import {
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <GlobalStyle />
       <SEO
         title="ig.news"
         description="Primeiro projeto next do curso Ignite da RocketSeat!"
       />
-      <GlobalStyle />
       <Component {...pageProps} />
     </>
   )
