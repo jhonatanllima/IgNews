@@ -56,5 +56,9 @@ export const Container = styled.header`
         }
       }
     }
+
+    button {
+      margin-left: auto;
+    }
   }
 `;
