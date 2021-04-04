@@ -42,4 +42,8 @@ export const Container = styled.main`
       color: var(--cyan-500);
     }
   }
+
+  button {
+    margin-top: 2.5rem;
+  }
 `;
