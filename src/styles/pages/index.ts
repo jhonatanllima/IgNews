@@ -4,7 +4,7 @@ export const Container = styled.main`
   margin: 0 auto;
   padding: 0 2rem;
   max-width: 1120px;
-  height: calc(100vh - 5rem);
+  min-height: calc(100vh - 5rem);
 
   display: flex;
   align-items: center;
