@@ -1,4 +1,5 @@
 import { AppProps } from 'next/app'
+import { Provider as NextAuthProvider } from 'next-auth/client'
 
 import GlobalStyle from '../styles/GobalStyle'
 
@@ -9,7 +10,7 @@ import {
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <NextAuthProvider session={pageProps.session}>
       <Header />
       <GlobalStyle />
       <SEO
@@ -17,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         description="Primeiro projeto next do curso Ignite da RocketSeat!"
       />
       <Component {...pageProps} />
-    </>
+    </NextAuthProvider>
   )
 }
 
