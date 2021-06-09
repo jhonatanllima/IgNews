@@ -1,3 +1,5 @@
+import { useSession, signIn } from 'next-auth/client'
+
 import * as S from './styles'
 
 interface SubscribeButtonProps {
@@ -5,8 +7,19 @@ interface SubscribeButtonProps {
 }
 
 export function SubscribeButton({ priceId }: SubscribeButtonProps) {
+  const [sesion] = useSession();
+
+  function handleSubscribe() {
+    if (!sesion) {
+      signIn('github')
+      return
+    }
+
+    // criar a checkout session
+  }
+
   return (
-    <S.Container type="button">
+    <S.Container type="button" onClick={handleSubscribe}>
       Subscribe now
     </S.Container>
   )
