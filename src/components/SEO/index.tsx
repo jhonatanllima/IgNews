@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 interface SEOProps {
   title: string;
-  description: string;
+  description?: string;
   canonical?: string;
   amphtml?: string;
   ogType?: 'website' | 'article';
