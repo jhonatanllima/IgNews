@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import * as S from './styles'
 
 import {
@@ -11,8 +13,13 @@ export function Header() {
         <img src="/images/logo.svg" alt="ig.news" />
 
         <nav>
-          <a href="#" className="isActive">Home</a>
-          <a href="#">Posts</a>
+          <Link href="/">
+            <a className="isActive">Home</a>
+          </Link>
+
+          <Link href="/posts" prefetch>
+            <a >Posts</a>
+          </Link>
         </nav>
 
         <SignInButton />
