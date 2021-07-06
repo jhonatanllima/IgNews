@@ -1,10 +1,5 @@
-import { SEO } from './SEO'
-import { Header } from './Header'
-import { SignInButton } from './SignInButton'
-import { SubscribeButton } from './SubscribeButton'
-export {
-  SEO,
-  Header,
-  SignInButton,
-  SubscribeButton,
-}
+export { SEO } from './SEO'
+export { Header } from './Header'
+export { ActiveLink } from './ActiveLink'
+export { SignInButton } from './SignInButton'
+export { SubscribeButton } from './SubscribeButton'
